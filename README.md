@@ -1,2 +1,2 @@
 # DNN_Speech_Recognition
-Exploring various models architecture for automatic speech recognition pipeline
+Building an automatic speech recognition pipeline using the [LibriSpeech](http://www.openslr.org/12/) data set. For the acoustic model both spectrograms and MFCCs are extracted from the data and fed to a DNN. For the DNN model different architectures are implemented using Keras and Tensorflow backend to explore the best preforming option. At the end a final model is built consisting of a 1D CNN Layer to extract features from the spectrogram, two bidirectional GRU layers with a batch normalization layer for each and finally a time distributed layer to receive sequences from the GRUs with a softmax activation to decode the probability distributions.
